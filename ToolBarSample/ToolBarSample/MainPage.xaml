@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             x:Class="ToolBarSample.MainPage">
+
+    <imageEditor:SfImageEditor x:Name="imageEditor" 
+                               Source="scenery.png"
+                               AutoGenerateToolbarItems="False"
+                               ToolbarItemSelected="OnToolbarItemSelected">
+        
+        <imageEditor:SfImageEditor.Toolbars>
+            <imageEditor:ImageEditorToolbar Position="End" Orientaion="Vertical">
+                <imageEditor:ImageEditorToolbar.ToolbarItems>
+                    <imageEditor:ImageEditorToolbarGroupItem Alignment="Start">
+                        <imageEditor:ImageEditorToolbarGroupItem.Items>
+                            <imageEditor:ImageEditorToolbarItem Name="Browse" />
+                            <imageEditor:ImageEditorToolbarItem Name="Reset" />
+                        </imageEditor:ImageEditorToolbarGroupItem.Items>
+                    </imageEditor:ImageEditorToolbarGroupItem>
+                    <imageEditor:ImageEditorToolbarGroupItem Alignment="End">
+                        <imageEditor:ImageEditorToolbarGroupItem.Items>
+                            <imageEditor:ImageEditorToolbarItem Name="Save" />
+                            <imageEditor:ImageEditorToolbarItem Name="SaveEdit" />
+                        </imageEditor:ImageEditorToolbarGroupItem.Items>
+                    </imageEditor:ImageEditorToolbarGroupItem>
+                </imageEditor:ImageEditorToolbar.ToolbarItems>
+            </imageEditor:ImageEditorToolbar>
+        </imageEditor:SfImageEditor.Toolbars>
+
+    </imageEditor:SfImageEditor>
+
+</ContentPage>
